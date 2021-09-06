@@ -2,57 +2,59 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Tip calculator app</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-  <span>SPLI</span>
-  <span>TTER</span>
   <div>
-    <div>
-      <div>
+    <span>SPLI</span>
+    <span>TTER</span>
+  </div>
+  <div id="calculator-container" class="container flex-horizontal">
+    <div id="input-container" class="container calculator-panel">
+      <div class="input-container_form-item">
         <label>Bill</label>
-        <input type="text" id="input_bill">
+        <input type="text" id="input-bill" placeholder="0">
       </div>
-      <div>
+      <div class="input-container_form-item">
         <label>Select Tip %</label>
-        <div>
+        <div id="percent-selector">
           <button>5%</button>
           <button>10%</button>
           <button>15%</button>
           <button>25%</button>
           <button>50%</button>
-          <input type="text" id="input_custom">
+          <input type="text" id="input-custom" placeholder="Custom">
         </div>
       </div>
       <div>
         <label>Number of People</label>
-        <input type="text" id="input_people">
+        <input type="text" id="input-people" placeholder="0">
       </div>
     </div>
-    <div>
-      <div>
-        <div>
-          <span>Tip Amount</span>
-          <span>/ person</span>
+    <div id="output-container" class="container calculator-panel flex-vertical">
+      <div class="row-result">
+        <div class="label-result">
+          <span class="title-label-result">Tip Amount</span>
+          <span class="subtitle-label-result">/ person</span>
         </div>
-        <span>$0.0</span>
+        <span class="value-result">$0.0</span>
       </div>
-      <div>
-        <div>
-          <span>Total</span>
-          <span>/ person</span>
+      <div class="row-result">
+        <div class="label-result">
+          <span class="title-label-result">Total</span>
+          <span class="subtitle-label-result">/ person</span>
         </div>
-        <span>$0.0</span>
+        <span class="value-result">$0.0</span>
       </div>
       <button>RESET</button>
     </div>
   </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="https://luis1y0.github.io">Luis Enrique</a>.
   </div>
 </body>
 </html>

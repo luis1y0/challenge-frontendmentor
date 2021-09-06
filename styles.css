@@ -1,0 +1,111 @@
+html, *, :root {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    --primary-color: hsl(172, 67%, 45%);
+    --dark-cyan-color: hsl(183, 100%, 15%);
+    --dark-grayish-cyan-color: hsl(186, 14%, 43%);
+    --dark-grayish-cyan-color2: hsl(184, 14%, 56%);
+    --light-grayish-cyan-color: hsl(185, 41%, 84%);
+    --light-grayish-cyan-color2: hsl(189, 41%, 97%);
+    --white-color: hsl(0, 0%, 100%);
+    --font-size-input: 24px;
+    font-size: 12pt;
+}
+
+body {
+    background-color: var(--light-grayish-cyan-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100vh;
+}
+
+/* estilos de contenedores */
+
+#calculator-container {
+    background-color: var(--white-color);
+}
+
+@media (max-width:  700px) {
+    #calculator-container {
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+@media (min-width:  700px) {
+    #calculator-container {
+    width: 650px;
+        flex-direction: row;
+    }
+    .calculator-panel {
+        width: 305px;
+    }
+}
+
+.container {
+    border-radius: 10px;
+    padding: 30px;
+}
+
+#input-container {
+    background-color: var(--white-color);
+    color: var(--dark-cyan-color);
+    padding: 20px 20px 10px 0px;
+}
+
+#output-container {
+    background-color: var(--dark-cyan-color);
+    color: var(--dark-grayish-cyan-color);
+    padding: 30px;
+}
+
+.flex-horizontal {
+    display: flex;
+}
+
+.flex-vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+/* posicionamiento de medidas de elementos dentro de contenedores */
+input {
+    text-align: right;
+    width: 100%;
+}
+
+#percent-selector {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+}
+
+/* input no respeta las dimensiones que le pone grid si no se le pone un minimo de 0 */
+input {
+    min-width: 0;
+}
+
+.row-result:nth-child(2) {
+    flex: 1;
+}
+.row-result {
+    display: flex;
+}
+.label-result {
+    flex: 1;
+}
+.label-result span {
+    display: block;
+}
+.input-container_form-item {
+    margin-bottom: 20px;
+}
+.input-container_form-item:last-child {
+    margin-bottom: 0;
+}
+#input-container_form-item {
+    padding-bottom: 0px;
+}
