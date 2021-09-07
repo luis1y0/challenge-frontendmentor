@@ -11,6 +11,7 @@ html, *, :root {
     --white-color: hsl(0, 0%, 100%);
     --font-size-input: 24px;
     font-size: 12pt;
+    font-family: 'Space Mono';
 }
 
 body {
@@ -28,32 +29,34 @@ body {
     background-color: var(--white-color);
 }
 
-@media (max-width:  700px) {
+@media (max-width:  900px) {
     #calculator-container {
         flex-direction: column;
         width: 100%;
     }
+
+    #input-container {
+        padding: 20px 0px 10px 0px;
+    }
 }
 
-@media (min-width:  700px) {
+@media (min-width:  900px) {
     #calculator-container {
-    width: 650px;
+    width: 800px;
         flex-direction: row;
     }
     .calculator-panel {
-        width: 305px;
+        width: 400px;
+    }
+
+    #input-container {
+        padding: 20px 20px 10px 0px;
     }
 }
 
 .container {
     border-radius: 10px;
     padding: 30px;
-}
-
-#input-container {
-    background-color: var(--white-color);
-    color: var(--dark-cyan-color);
-    padding: 20px 20px 10px 0px;
 }
 
 #output-container {
@@ -93,6 +96,7 @@ input {
 }
 .row-result {
     display: flex;
+    padding: 10px 0px;
 }
 .label-result {
     flex: 1;

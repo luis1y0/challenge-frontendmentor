@@ -1,0 +1,20 @@
+
+#input-bill {
+    background: url(images/icon-dollar.svg) no-repeat scroll 12px 12px;
+    padding: 5px;
+}
+
+#input-people {
+    background: url(images/icon-person.svg) no-repeat scroll 12px 12px;
+    padding: 5px;
+}
+input {
+    font-size: var(--font-size-input);
+    background-color: var(--light-grayish-cyan-color);
+    font-weight: 700;
+}
+
+#percent-selector button {
+    font-weight: 700;
+    font-size: var(--font-size-input);
+}
