@@ -1,20 +1,49 @@
 
-#input-bill {
-    background: url(images/icon-dollar.svg) no-repeat scroll 12px 12px;
-    padding: 5px;
-}
-
-#input-people {
-    background: url(images/icon-person.svg) no-repeat scroll 12px 12px;
-    padding: 5px;
-}
 input {
     font-size: var(--font-size-input);
-    background-color: var(--light-grayish-cyan-color);
+    background-color: var(--light-grayish-cyan-color2);
     font-weight: 700;
+    border-radius: 5px;
+    padding: 5px;
+    border-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    outline: none;
+    color: var(--dark-cyan-color);
+}
+
+input:active, input:focus {
+    border-color: var(--primary-color);
+    z-index: 1;
 }
 
 #percent-selector button {
     font-weight: 700;
     font-size: var(--font-size-input);
+}
+
+#error-bill, #error-people {
+    color: red;
+    visibility: visible;
+}
+
+#input-bill, #input-people {
+    padding-left: 40px;
+}
+
+.field-icon {
+    width: 20px;
+}
+
+button[class="seleccionado"] {
+    background-color: var();
+    padding: 5px;
+}
+
+button[class="no-seleccionado"] {
+    background-color: var(--dark-cyan-color);
+    color: var(--white-color);
+    border-width: 0;
+    border-radius: 5px;
+    padding: 5px;
 }

@@ -113,3 +113,14 @@ input {
 #input-container_form-item {
     padding-bottom: 0px;
 }
+
+.field-title-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.field-icon {
+    position: absolute;
+    margin: 10px -10px -10px 10px;
+    z-index: 2;
+}

@@ -19,23 +19,35 @@
   <div id="calculator-container" class="container flex-horizontal">
     <div id="input-container" class="container calculator-panel">
       <div class="input-container_form-item">
-        <label>Bill</label>
-        <input type="text" id="input-bill" placeholder="0">
+        <div class="field-title-row">
+          <label>Bill</label>
+          <span id="error-bill">Can't be zero</span>
+        </div>
+        <div class="filed-input-row">
+          <img class="field-icon" src="images/icon-dollar.svg">
+          <input type="text" id="input-bill" placeholder="0">
+        </div>
       </div>
       <div class="input-container_form-item">
         <label>Select Tip %</label>
         <div id="percent-selector">
-          <button>5%</button>
-          <button>10%</button>
-          <button>15%</button>
-          <button>25%</button>
-          <button>50%</button>
+          <button class="no-seleccionado">5%</button>
+          <button class="no-seleccionado">10%</button>
+          <button class="no-seleccionado">15%</button>
+          <button class="no-seleccionado">25%</button>
+          <button class="no-seleccionado">50%</button>
           <input type="text" id="input-custom" placeholder="Custom">
         </div>
       </div>
       <div>
-        <label>Number of People</label>
-        <input type="text" id="input-people" placeholder="0">
+        <div class="field-title-row">
+          <label>Number of People</label>
+          <span id="error-people">Can't be zero</span>
+        </div>
+        <div class="filed-input-row">
+          <img class="field-icon" src="images/icon-person.svg">
+          <input type="text" id="input-people" placeholder="0">
+        </div>
       </div>
     </div>
     <div id="output-container" class="container calculator-panel flex-vertical">
