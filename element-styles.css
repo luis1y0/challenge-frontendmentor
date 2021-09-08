@@ -36,14 +36,50 @@ input:active, input:focus {
 }
 
 button[class="seleccionado"] {
-    background-color: var();
+    background-color: var(--light-grayish-cyan-color);
+    color: var(--dark-cyan-color);
+    border-width: 0;
+    border-radius: 5px;
     padding: 5px;
 }
 
-button[class="no-seleccionado"] {
+button[class~="no-seleccionado"] {
     background-color: var(--dark-cyan-color);
     color: var(--white-color);
     border-width: 0;
     border-radius: 5px;
     padding: 5px;
+}
+
+.title-label-result {
+    color: var(--white-color);
+    font-weight: 700;
+}
+
+.value-result {
+    color: var(--primary-color);
+    font-size: 35px;
+    font-weight: 700;
+}
+
+#button-reset {
+    outline: none;
+    border-width: 0;
+    border-radius: 5px;
+    font-size: var(--font-size-input);
+    font-weight: 700;
+    padding: 5px;
+}
+
+#button-reset:active {
+    background-color: var(--primary-color);
+}
+
+.activo {
+    background-color: var(--light-grayish-cyan-color);
+}
+
+.inactivo {
+    background-color: hsl(172deg 41% 27%);
+    color: var(--dark-cyan-color);
 }

@@ -10,6 +10,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" type="text/css" href="element-styles.css">
+  <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
   <div>
@@ -31,11 +32,11 @@
       <div class="input-container_form-item">
         <label>Select Tip %</label>
         <div id="percent-selector">
-          <button class="no-seleccionado">5%</button>
-          <button class="no-seleccionado">10%</button>
-          <button class="no-seleccionado">15%</button>
-          <button class="no-seleccionado">25%</button>
-          <button class="no-seleccionado">50%</button>
+          <button class="btn-percent no-seleccionado">5%</button>
+          <button class="btn-percent no-seleccionado">10%</button>
+          <button class="btn-percent no-seleccionado">15%</button>
+          <button class="btn-percent no-seleccionado">25%</button>
+          <button class="btn-percent no-seleccionado">50%</button>
           <input type="text" id="input-custom" placeholder="Custom">
         </div>
       </div>
@@ -65,7 +66,7 @@
         </div>
         <span class="value-result">$0.0</span>
       </div>
-      <button>RESET</button>
+      <button id="button-reset" class="inactivo">RESET</button>
     </div>
   </div>
   <div class="attribution">
