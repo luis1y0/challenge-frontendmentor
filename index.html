@@ -32,11 +32,11 @@
       <div class="input-container_form-item">
         <label>Select Tip %</label>
         <div id="percent-selector">
-          <button class="btn-percent no-seleccionado">5%</button>
-          <button class="btn-percent no-seleccionado">10%</button>
-          <button class="btn-percent no-seleccionado">15%</button>
-          <button class="btn-percent no-seleccionado">25%</button>
-          <button class="btn-percent no-seleccionado">50%</button>
+          <button class="btn-percent no-seleccionado" data-percent="5">5%</button>
+          <button class="btn-percent no-seleccionado" data-percent="10">10%</button>
+          <button class="btn-percent no-seleccionado" data-percent="15">15%</button>
+          <button class="btn-percent no-seleccionado" data-percent="25">25%</button>
+          <button class="btn-percent no-seleccionado" data-percent="50">50%</button>
           <input type="text" id="input-custom" placeholder="Custom">
         </div>
       </div>
@@ -57,14 +57,14 @@
           <span class="title-label-result">Tip Amount</span>
           <span class="subtitle-label-result">/ person</span>
         </div>
-        <span class="value-result">$0.0</span>
+        <span id="result-tip" class="value-result">$ 0.0</span>
       </div>
       <div class="row-result">
         <div class="label-result">
           <span class="title-label-result">Total</span>
           <span class="subtitle-label-result">/ person</span>
         </div>
-        <span class="value-result">$0.0</span>
+        <span id="result-total" class="value-result">$ 0.0</span>
       </div>
       <button id="button-reset" class="inactivo">RESET</button>
     </div>
