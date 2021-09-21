@@ -19,53 +19,53 @@
   </header>
   <main id="calculator-container" class="container flex-horizontal">
     <section id="input-container" class="container calculator-panel">
-      <section class="input-container_form-item">
-        <section class="field-title-row">
+      <div class="input-container_form-item">
+        <div class="field-title-row">
           <label>Bill</label>
           <span id="error-bill">Can't be zero</span>
-        </section>
-        <section class="filed-input-row">
+        </div>
+        <div class="filed-input-row">
           <img class="field-icon" src="images/icon-dollar.svg" alt="Input for bill payment">
           <input type="number" id="input-bill" placeholder="0">
-        </section>
-      </section>
-      <section class="input-container_form-item">
+        </div>
+      </div>
+      <div class="input-container_form-item">
         <label>Select Tip %</label>
-        <section id="percent-selector">
+        <div id="percent-selector">
           <button class="btn-percent no-seleccionado" data-percent="5">5%</button>
           <button class="btn-percent no-seleccionado" data-percent="10">10%</button>
           <button class="btn-percent no-seleccionado" data-percent="15">15%</button>
           <button class="btn-percent no-seleccionado" data-percent="25">25%</button>
           <button class="btn-percent no-seleccionado" data-percent="50">50%</button>
           <input type="number" id="input-custom" placeholder="Custom">
-        </section>
-      </section>
-      <section>
-        <section class="field-title-row">
+        </div>
+      </div>
+      <div>
+        <div class="field-title-row">
           <label>Number of People</label>
           <span id="error-people">Can't be zero</span>
-        </section>
-        <section class="filed-input-row">
+        </div>
+        <div class="filed-input-row">
           <img class="field-icon" src="images/icon-person.svg" alt="Input about number of people">
           <input type="number" id="input-people" placeholder="0">
-        </section>
-      </section>
+        </div>
+      </div>
     </section>
     <section id="output-container" class="container calculator-panel flex-vertical">
-      <section class="row-result">
-        <section class="label-result">
+      <div class="row-result">
+        <div class="label-result">
           <span class="title-label-result">Tip Amount</span>
           <span class="subtitle-label-result">/ person</span>
-        </section>
+        </div>
         <span id="result-tip" class="value-result">$ 0.0</span>
-      </section>
-      <section class="row-result">
+      </div>
+      <div class="row-result">
         <section class="label-result">
           <span class="title-label-result">Total</span>
           <span class="subtitle-label-result">/ person</span>
-        </section>
+        </div>
         <span id="result-total" class="value-result">$ 0.0</span>
-      </section>
+      </div>
       <button id="button-reset" class="inactivo">RESET</button>
     </section>
   </main>
