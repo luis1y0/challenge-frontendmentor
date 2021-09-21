@@ -130,3 +130,12 @@ input {
     margin: 10px -10px -10px 10px;
     z-index: 2;
 }
+
+.title {
+    font-size: var(--font-size-input);
+    color: var(--dark-cyan-color);
+    display: block;
+    font-weight: 700;
+    letter-spacing: 8px;
+    padding: 8px;
+}
