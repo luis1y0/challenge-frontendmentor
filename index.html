@@ -10,22 +10,22 @@
 <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <link rel="stylesheet" type="text/css" href="element-styles.css">
-  <script type="text/javascript" src="script.js"></script>
+  <script src="script.js"></script>
 </head>
 <body>
-  <div>
+  <header>
     <span class="title">SPLI</span>
     <span class="title">TTER</span>
-  </div>
-  <div id="calculator-container" class="container flex-horizontal">
-    <div id="input-container" class="container calculator-panel">
+  </header>
+  <main id="calculator-container" class="container flex-horizontal">
+    <section id="input-container" class="container calculator-panel">
       <div class="input-container_form-item">
         <div class="field-title-row">
           <label>Bill</label>
           <span id="error-bill">Can't be zero</span>
         </div>
         <div class="filed-input-row">
-          <img class="field-icon" src="images/icon-dollar.svg">
+          <img class="field-icon" src="images/icon-dollar.svg" alt="Input for bill payment">
           <input type="number" id="input-bill" placeholder="0">
         </div>
       </div>
@@ -46,12 +46,12 @@
           <span id="error-people">Can't be zero</span>
         </div>
         <div class="filed-input-row">
-          <img class="field-icon" src="images/icon-person.svg">
+          <img class="field-icon" src="images/icon-person.svg" alt="Input about number of people">
           <input type="number" id="input-people" placeholder="0">
         </div>
       </div>
-    </div>
-    <div id="output-container" class="container calculator-panel flex-vertical">
+    </section>
+    <section id="output-container" class="container calculator-panel flex-vertical">
       <div class="row-result">
         <div class="label-result">
           <span class="title-label-result">Tip Amount</span>
@@ -67,11 +67,11 @@
         <span id="result-total" class="value-result">$ 0.0</span>
       </div>
       <button id="button-reset" class="inactivo">RESET</button>
-    </div>
-  </div>
-  <div class="attribution">
+    </section>
+  </main>
+  <footer></footer> class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="https://luis1y0.github.io">Luis Enrique</a>.
-  </div>
+  </footer>
 </body>
 </html>
